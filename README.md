@@ -11,7 +11,7 @@
 With Go:
 
 ```bash
-▶ go get -u github.com/1ndianl33t/1ndi-hacks/urlprobe
+▶ go get -u github.com/1ndianl33t/urlprobe
 ```
 ## usage
 ```bash
