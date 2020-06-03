@@ -22,7 +22,7 @@ func Banner() {
         color.HiYellow("           URLProbe:- Urls Status Code Checker")
         color.HiRed("              https://github.com/1ndianl33t")
 
-        color.HiCyan("------------------------------------------------------------------------->
+        color.HiCyan("-------------------------------------------------------------------------")
 }
 func printStatus(req *http.Request, resp *http.Response, err error) {
         if err != nil {
