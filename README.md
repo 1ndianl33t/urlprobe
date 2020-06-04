@@ -15,6 +15,8 @@ With Go:
 ```
 ## usage
 ```bash
+▶ assetfinder --subs-only test.com | waybackurls | gf redirect | urlprobe -c 1000 -t 05
+▶ Subfinder -d test.com | gau | gf ssrf | urlprobe -c 1000 -t 05
 ▶ cat urls.txt | urlprobe 
 ▶ cat urls.txt | urlprobe -c 100 -t 10
 ```
