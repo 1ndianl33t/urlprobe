@@ -25,6 +25,12 @@ With Go:
 ▶ Subfinder -d test.com | gau | gf ssrf | urlprobe -c 1000 -t 05
 
 ```
+### Tips
+
+grep 200ok urls 
+```bash
+cat hosts | urlprobe -c 1000 -t 01 | grep 200 | awk '{print $5}' | tee -a lol-200.txt 
+```
 ## Output
 ```bash
 [Status code] Content-Length : URL
