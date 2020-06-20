@@ -1,11 +1,16 @@
 
-# URLProbe v 2.0
+# URLProbe v 2.1
 
 
 *Take a list of URLs and returns their HTTP response codes*
 
 ***Warning: This is a work in progress.***
 
+### What's New ( update)
+```bash
+Added -s flag to print specific status code. 
+Changed colour of HTTP response 404 as red and other interesting responses like 401 and 403 to Cyan colour
+```
 ## Install
 
 With Go:
@@ -18,6 +23,15 @@ With Go:
 ▶ cat urls.txt | urlprobe 
 ▶ cat urls.txt | urlprobe -c 100 -t 10
 ```
+### Print Only Certain Status Codes
+
+If you only want to print results that returned a certain status code, you can
+use the `-s`  option:
+
+```
+▶ cat links | urlprobe -c 1000 -t 05 -s 200
+```
+
 ## Example
 ```bash
 
