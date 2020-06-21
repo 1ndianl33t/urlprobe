@@ -37,7 +37,7 @@ func printStatus(req *http.Request, resp *http.Response,  err error) {
 }
 
 func ParseArguments() {
-    flag.IntVar(&concurrency, "c", 50, "Number of workers to use..default 50")
+    flag.IntVar(&concurrency, "c", 500, "Number of workers to use..default 500")
     flag.IntVar(&status, "s", 1, "If enabled..then check for specific status")
     flag.IntVar(&times, "t", 05, "Set rate limit")
     flag.Parse()
