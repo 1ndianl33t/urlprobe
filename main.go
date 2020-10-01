@@ -30,8 +30,10 @@ ____ _____________.____   __________              ___.
 }
 func printStatus(req *http.Request, resp *http.Response, err error) {
 	if err != nil {
+		color.HiRed(err.Error())
 		return
 	}
+
 	StatusCheck(req, resp)
 
 }
